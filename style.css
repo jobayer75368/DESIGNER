@@ -260,7 +260,6 @@ body {
     #fourth_section{
         width: 100%;
         position: relative;
-        background-color: rgb(158, 158, 158);
     }
 
     #fourth_section .parent{
@@ -270,16 +269,21 @@ body {
         gap: 50px;
         color: #2A2A2A;
         position: absolute;
-        /* right: 10px; */
         left: 15px;
     }
 
+    /* fourth section left aside start  */
     #fourth_section .left{
         width: 40%;
+        /* height: 400px; */
+        height: 460px;
         display: flex;
         align-items: center;
     }
 
+    /* #fourth_section .left main{
+        height: 400px;
+    } */
     #fourth_section .left main p{
         margin-top: 30px;
         font-size: 13px;
@@ -304,48 +308,6 @@ body {
         top: 23px;
     }
 
-    #fourth_section .right{
-        width: 55%;
-        display: flex;
-        align-items: center;
-    }
-    #fourth_section .right .card_1{
-        height: 460px;
-        width: 320px;
-        position: relative;
-        z-index: 3;
-    }
-    #fourth_section .right .card_1 img{
-        height: 100%;
-        width: 100%;
-        border-radius: 8PX;
-    }
-    #fourth_section .right .card_2{
-        height: 300px;
-        width: 230px;
-        position: relative;
-        left: -5px;
-        z-index: 2;
-    }
-        
-    #fourth_section .right .card_2 img{
-        height: 100%;
-        width: 100%;
-        border-radius: 8PX;
-    }
-    #fourth_section .right .card_3{
-        height: 200px;
-        width: 170px;
-        position: relative;
-        left: -10px;
-        z-index: 1;
-    }
-    #fourth_section .right .card_3 img{
-        height: 100%;
-        width: 100%;
-        border-radius: 8PX;
-    }
-
     #fourth_section a{
         margin-top: 40px;
         text-decoration: none;
@@ -362,3 +324,196 @@ body {
     #fourth_section a:hover{
         background-color: #2A2A2A;
     }
+    /* fourth section left aside end  */
+
+    /* fourth section right aside start  */
+    #fourth_section .right{
+        width: 55%;
+        display: flex;
+        align-items: center;
+    }
+    #fourth_section .right .card_1{
+        height: 400px;
+        width: 280px;
+        border-radius: 8px;
+        position: relative;
+        z-index: 3;
+        transition: all.3s ease;
+    }
+    .card_1 .overlay_1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color:rgba(255, 86, 91, 0.9);
+        opacity: 0;
+        border-radius: 8PX;
+        transition: opacity 0.3s ease;
+    }
+    #fourth_section .right .card_1:hover{
+        height: 460px;
+        width: 320px;
+    }
+    .card_1:hover .overlay_1{
+        opacity: 0.99;
+    }
+    .overlay_1 h3{
+        transform: translateX(-20px);
+        opacity: 0;
+        transition: all 0.4s ease;
+    }
+    .overlay_1 p{
+        font-size: 12px;
+        transform: translateX(20px);
+        opacity: 0;
+        transition: all 0.4s ease;
+    }
+    
+    .card_1:hover .overlay_1 h3{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    .card_1:hover .overlay_1 p{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    #fourth_section .right .card_1 img{
+        height: 100%;
+        width: 100%;
+        border-radius: 8PX;
+    }
+
+    #fourth_section .right .card_2{
+        height: 300px;
+        width: 230px;
+        border-radius: 8px;
+        position: relative;
+        left: -5px;
+        z-index: 2;
+        transition: all 0.5s ease;
+    }
+    
+    .card_2 .overlay_2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color:rgba(255, 86, 91, 0.9);
+        opacity: 0;
+        border-radius: 8PX;
+        transition: opacity 0.3s ease;
+    }
+    #fourth_section .right .card_2:hover{
+        height: 460px;
+        width: 320px;
+        z-index: 4;    
+    }
+    .card_2:hover .overlay_2{
+         opacity: 0.99;
+    }
+    .overlay_2 h3{
+        transform: translateX(-17px);
+        opacity: 0;
+        transition: all 0.4s 0.2s ease;
+    }
+    .overlay_2 p{
+        font-size: 12px;
+        transform: translateX(17px);
+        opacity: 0;
+        transition: all 0.4s 0.2s ease;
+    }
+    
+    .card_2:hover .overlay_2 h3{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    .card_2:hover .overlay_2 p{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    #fourth_section .right .card_2 img{
+        height: 100%;
+        width: 100%;
+        border-radius: 8PX;
+    }
+    #fourth_section .right .card_3{
+        height: 200px;
+        width: 165px;
+        border-radius: 8PX;
+        position: relative;
+        left: -10px;
+        z-index: 1;
+        transition: all.6s ease;
+    }
+    #fourth_section .right .card_3 img{
+        height: 100%;
+        width: 100%;
+        border-radius: 8PX;
+    }
+    .card_3 .overlay_3{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color:rgba(255, 86, 91, 0.9);
+        opacity: 0;
+        border-radius: 8PX;
+        transition: opacity 0.3s ease;
+    }
+    #fourth_section .right .card_3:hover{
+        height: 460px;
+        width: 320px;
+        z-index: 5;
+    }
+    .card_3:hover .overlay_3{
+        opacity: 0.99;
+    }
+    .overlay_3 h3{
+        transform: translateX(-10px);
+        opacity: 0;
+        transition: all 0.4s 0.3s ease;
+    }
+    .overlay_3 p{
+        font-size: 12px;
+        transform: translateX(10px);
+        opacity: 0;
+        transition: all 0.4s 0.3s ease;
+    }
+    
+    .card_3:hover .overlay_3 h3{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    .card_3:hover .overlay_3 p{
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    /* fourth section right aside end  */
