@@ -258,13 +258,15 @@ body {
 
     /* fourth/trending work section start  */
     #fourth_section{
+        margin-top: 50px;
         width: 100%;
+        height: 460px;
         position: relative;
     }
 
     #fourth_section .parent{
         width: 95%;
-        margin: 80px 0px 0px 80px;
+        margin: 0px 0px 0px 80px;
         display: flex;
         gap: 50px;
         color: #2A2A2A;
@@ -275,15 +277,11 @@ body {
     /* fourth section left aside start  */
     #fourth_section .left{
         width: 40%;
-        /* height: 400px; */
         height: 460px;
         display: flex;
         align-items: center;
     }
 
-    /* #fourth_section .left main{
-        height: 400px;
-    } */
     #fourth_section .left main p{
         margin-top: 30px;
         font-size: 13px;
@@ -338,7 +336,7 @@ body {
         border-radius: 8px;
         position: relative;
         z-index: 3;
-        transition: all.3s ease;
+        transition: all 0.3s ease;
     }
     .card_1 .overlay_1{
         display: flex;
@@ -399,7 +397,7 @@ body {
         position: relative;
         left: -5px;
         z-index: 2;
-        transition: all 0.5s ease;
+        transition: all 0.4s ease;
     }
     
     .card_2 .overlay_2{
@@ -419,7 +417,7 @@ body {
         background-color:rgba(255, 86, 91, 0.9);
         opacity: 0;
         border-radius: 8PX;
-        transition: opacity 0.3s ease;
+        transition: all 0.3s ease;
     }
     #fourth_section .right .card_2:hover{
         height: 460px;
@@ -461,7 +459,7 @@ body {
         position: relative;
         left: -10px;
         z-index: 1;
-        transition: all.6s ease;
+        transition: all 0.5s ease;
     }
     #fourth_section .right .card_3 img{
         height: 100%;
@@ -517,3 +515,97 @@ body {
     }
 
     /* fourth section right aside end  */
+    /* fourth/trending work section end  */
+
+    #fifth_section{
+        margin-top: 80px;
+        width: 100%;
+        height: 650px;
+        background-image: url(bg_image/crop-hands-with-map.png);
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #fifth_section main{
+        width: 80%;
+        height: 72%;
+        display: flex;
+        border-radius: 6px;
+        background-color: gray;
+    }
+    #fifth_section .textarea{      
+        width: 50%;
+        padding: 50px;
+        color: #2A2A2A;
+        background-color: rgb(255, 255, 255);
+        border-radius: 6px 0px 0px 6px;
+    }
+    #fifth_section .textarea h1{
+        font-size: 30px;
+    }
+    
+    #fifth_section .textarea h1 span{
+        color: #ff444a;
+        position: relative;
+        display: inline-block;
+        margin-left: 100px;
+    }
+    #fifth_section .textarea h1 span::before{
+        content: '';
+        width: 80px;
+        height: 2px;
+        background-color: #ff565b;
+        position: absolute;
+        left: -100px;
+        top: 23px;
+    }
+
+    #fifth_section form{
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    #fifth_section form input{
+        width: 48%;
+        height: 40px;
+        padding: 10px;
+        border: 1px solid rgb(235, 235, 235);
+        border-radius: 7px;
+        
+    }
+    #fifth_section form textarea{
+        width: 100%;
+        height: 100px;
+        padding: 10px;
+        display: block;
+        border: 1px solid rgb(235, 235, 235);
+        border-radius: 7px;
+        resize: none;
+    }
+    #fifth_section form button{
+        margin-top: 10px;
+        width: 100%;
+        height: 40px;
+        border: none;
+        border-radius: 7px;
+        color: white;
+        background-color: #FF444A;
+        transition: all 0.3s linear;
+        cursor: pointer;
+    }
+    #fifth_section form button:hover{
+        background-color: #212529;
+    }
+    .map{
+        width: 50%;
+    }
+    .map iframe{
+        height: 100%;
+        width: 100%;
+        border-radius: 0px 6px 6px 0px;
+    }
+    /* fifth/location section end  */
