@@ -6,6 +6,7 @@
 
 body {
     font-family: Poppins, Verdana, Arial, Helvetica, sans-serif;
+    overflow-X: hidden;
 }
     .container{
         max-width: 1400px;
@@ -15,6 +16,7 @@ body {
     /* header start  */
     header {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-around;
         align-items: center;       
         position: fixed;
@@ -24,15 +26,16 @@ body {
         background-color: #2a2a2a93;
     }
     nav{
-        padding: 19px;
+        padding: 0px 19px;
+        display: flex;
+        flex-wrap: wrap;
     }
     nav a{
-        padding: 17px 22px;
+        padding: 19px 22px;
         text-decoration: none;
         color: white;
-        flex-direction: row;
         justify-content: center;
-        border-radius: 0px 0px 12px 12px; 
+        border-radius: 0px 0px 12px 12px;
     }
     nav a:hover{
         color: #FF565B;
@@ -40,7 +43,7 @@ body {
     nav a:focus{
         background-color: #FFFFFF;
         color: #FF565B;
-        border-top: 5px solid red;
+        border-top: 2px solid red;
     }
     /* header end  */
 
@@ -51,7 +54,6 @@ body {
         background-position: center;
         background-size: cover;
         width: 100%;
-        /* height: 750px; */
         display: flex;
         align-items: center;
         position: relative;
@@ -105,7 +107,7 @@ body {
     /* second/search section start */
     #second_section{
         width: 83%;
-        padding: 60px;
+        padding: 40px;
         background-color: #ffffff;
         margin: auto;
         position: relative;
@@ -116,17 +118,23 @@ body {
     }
 
     #second_section .main_box{
+        width: 100%;
         display: flex;
+        flex-wrap: wrap;
         flex-direction: column;
         align-items: center;
     }
     #second_section .main_box form{
+        width: 100%;
         color: #212529;
         display: flex;
+        flex-wrap: wrap;
         gap: 25px;
         justify-content: center;
     }
-
+    #second_section .main_box form label{
+        width:23.19%;
+    }
     #second_section .main_box form h3,input{
         margin-bottom: 20px;
     }
@@ -137,7 +145,8 @@ body {
         color: #212529;
         background-color: white;
         height: 45px;
-        width: 220px;
+        /* width: 220px; */
+        width: 100%;
         padding: 13px;
         border-radius: 6px;
         border: 1px solid #eeeeee;
@@ -182,11 +191,13 @@ body {
     #third_section .left .armchair{
         width: 96%;
         height: 650px;
+        
     }
     #third_section .left .armchair img{
         width: 100%;
         height: 100%;
         border-radius: 10px;
+        
     }
     
     #third_section .left h1 span {
@@ -261,17 +272,15 @@ body {
         margin-top: 50px;
         width: 100%;
         height: 460px;
-        position: relative;
     }
 
     #fourth_section .parent{
         width: 95%;
-        margin: 0px 0px 0px 80px;
+        margin: 0 auto;
+        padding-left: 30px;
         display: flex;
         gap: 50px;
         color: #2A2A2A;
-        position: absolute;
-        left: 15px;
     }
 
     /* fourth section left aside start  */
@@ -517,6 +526,7 @@ body {
     /* fourth section right aside end  */
     /* fourth/trending work section end  */
 
+    /* fifth section start  */
     #fifth_section{
         margin-top: 80px;
         width: 100%;
@@ -704,5 +714,169 @@ body {
         background-color: white;
         cursor: pointer;
     }
-
     /* footer section end  */
+
+    /* Responsive */
+    /* Phones: default styles */
+
+/* Tablets */
+    @media (max-width: 600px) {
+      /* tablet styles */
+      .container{
+        width: 100%;
+      }
+      header nav a{
+        padding: 13px;
+        border-radius:12px;
+      }
+      nav a:focus{
+        background-color: #FFFFFF;
+        color: #FF565B;
+        border: none;
+        }
+      #second_section{
+        width: 88%;
+        padding: 6%;
+      }
+      #second_section .main_box form{
+        flex-direction: column;
+      }
+      #second_section .main_box form label{
+        width: 100%;
+      }
+      /* third section start */
+      #third_section{
+        display: block;
+      }
+    
+      #third_section .left{
+          width: 100%;
+      }
+      #third_section .left .armchair img{
+          height: auto;
+      }
+      #third_section .right{
+          width: 100%;
+          margin-top: 60px;
+      }
+      
+      #third_section .right li{
+          display: block;
+      }
+      /* third section end  */
+
+      #fourth_section .parent{
+        display: block;
+        width: 92%;
+        height: auto;
+        margin: 20px 0px;
+      }
+      #fourth_section .left{
+        width: 100%;
+        margin: 0px 0px 30px 0px;
+        height: auto;
+      }
+      #fourth_section .right{
+        width: 100%;
+        height: 460px;
+      }
+
+      #fifth_section{
+        margin-top: 350px;
+        height: 960px;
+      }
+      #fifth_section main{
+        height: 90%;
+        display: block;
+      }
+      #fifth_section main .textarea{
+        width: 100%;
+        height: 50%;
+        padding: 30px;
+        border-radius: 6px 6px 0px 0px;
+      }
+      #fifth_section main .map{
+        width: 100%;
+        height: 50%;
+      }
+      #fifth_section .map iframe{
+        border-radius: 0px 0px 6px 6px;
+      }
+
+      footer main{
+        text-align: center;
+        width: 90%;
+        display: block;
+      }
+      footer main .left{
+        width: 100%;
+        padding: 0;
+        margin-bottom: 50px;
+      }
+      footer main .right{
+        width: 100%;
+      }
+      footer main .right >h4{
+        margin-top: 50px;
+      }
+      footer .bottom{
+        margin-top: 80px;
+        display: block;
+        text-align: center;
+      }
+
+    }
+    
+    @media (max-width:500px) {
+        nav{
+            justify-content: center;
+        }
+        #first_section main h1{
+            font-size: 2.6rem;
+        }
+        #third_section .left h1{
+            font-size: 1.69rem;
+        }
+        #third_section .right{
+            margin-top: 0px;
+        }
+        #third_section .left .armchair{
+            height: 600px;
+        }
+        #fourth_section .left main h1{
+            font-size: 1.65rem;
+        }
+        #fourth_section{
+            height: auto;
+        }
+        #fourth_section .parent{
+            height: auto;
+        }
+        #fourth_section .right{
+            flex-wrap: wrap;
+            justify-content:space-around;
+            gap: 20px;
+            height: auto;
+        }
+        #fourth_section .right .card_1, #fourth_section .right .card_2,#fourth_section .right .card_3{
+            width:200px;
+            height: 320px;
+            z-index: 0;
+        }
+        #fourth_section .right img{
+            height: 100%;
+            width: 100%;
+        }
+        #fifth_section{
+            height: 980px;
+            margin-top: 50px;
+        }
+        #fifth_section .textarea h1{
+            font-size: 1.62rem;
+        }
+    }
+
+    /* Large desktops */
+    @media (min-width: 1280px) {
+      /* desktop styles */
+    }
