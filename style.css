@@ -545,6 +545,7 @@ body {
         display: flex;
         border-radius: 6px;
     }
+    /* fifth section left side start  */
     #fifth_section .textarea{      
         width: 50%;
         padding: 50px;
@@ -572,6 +573,7 @@ body {
         top: 23px;
     }
 
+    /* fifth section form start  */
     #fifth_section form{
         margin-top: 20px;
         display: flex;
@@ -613,6 +615,10 @@ body {
     #fifth_section form button:hover{
         background-color: #212529;
     }
+    /* fifth section form end  */
+    /* fifth section left side end  */
+
+    /* fifth section right side start  */
     .map{
         width: 50%;
     }
@@ -621,6 +627,8 @@ body {
         width: 100%;
         border-radius: 0px 6px 6px 0px;
     }
+    /* fifth section right side end  */
+
     /* fifth/location section end */
 
     /* footer section start  */
@@ -638,6 +646,8 @@ body {
         display: flex;
         flex-wrap: wrap;
     }
+
+    /* footer left side end  */
     footer main .left{
         width: 50%;
         padding-right: 200px;
@@ -650,6 +660,7 @@ body {
         font-size: 14px;
         color: #7c7c7c;
     }
+    /* footer right side start  */
     footer main .right{
         width: 50%;
     }
@@ -687,6 +698,7 @@ body {
         color: #ff5055;
     }
 
+    /* footer form start  */
     footer form{
         position: relative;
         margin-top: 30px;
@@ -714,17 +726,19 @@ body {
         background-color: white;
         cursor: pointer;
     }
+    /* footer right side end  */
+    /* footer form end  */
+
     /* footer section end  */
 
     /* Responsive */
-    /* Phones: default styles */
 
-/* Tablets */
+    /*For Tablets */
     @media (max-width: 600px) {
-      /* tablet styles */
       .container{
         width: 100%;
       }
+      /* header part start  */
       header nav a{
         padding: 13px;
         border-radius:12px;
@@ -734,6 +748,9 @@ body {
         color: #FF565B;
         border: none;
         }
+        /* header part end */
+
+        /* second section start  */
       #second_section{
         width: 88%;
         padding: 6%;
@@ -744,6 +761,8 @@ body {
       #second_section .main_box form label{
         width: 100%;
       }
+      /* second section end  */
+
       /* third section start */
       #third_section{
         display: block;
@@ -826,14 +845,18 @@ body {
       }
 
     }
-    
+    /* For small phones  */
+
     @media (max-width:500px) {
+        /* header part  */
         nav{
             justify-content: center;
         }
+        /* first section */
         #first_section main h1{
             font-size: 2.6rem;
         }
+        /* third section start  */
         #third_section .left h1{
             font-size: 1.69rem;
         }
@@ -843,6 +866,9 @@ body {
         #third_section .left .armchair{
             height: 600px;
         }
+        /* third section end  */
+
+        /* fourth section start  */
         #fourth_section .left main h1{
             font-size: 1.65rem;
         }
@@ -867,6 +893,9 @@ body {
             height: 100%;
             width: 100%;
         }
+        /* fourt section end  */
+
+        /* fift section start  */
         #fifth_section{
             height: 980px;
             margin-top: 50px;
@@ -874,9 +903,6 @@ body {
         #fifth_section .textarea h1{
             font-size: 1.62rem;
         }
+        /* fifth section end  */
     }
-
-    /* Large desktops */
-    @media (min-width: 1280px) {
-      /* desktop styles */
-    }
+    
