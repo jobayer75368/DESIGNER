@@ -133,7 +133,7 @@ body {
         justify-content: center;
     }
     #second_section .main_box form label{
-        width:23.19%;
+        width:23%;
     }
     #second_section .main_box form h3,input{
         margin-bottom: 20px;
@@ -145,7 +145,6 @@ body {
         color: #212529;
         background-color: white;
         height: 45px;
-        /* width: 220px; */
         width: 100%;
         padding: 13px;
         border-radius: 6px;
